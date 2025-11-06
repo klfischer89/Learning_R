@@ -38,3 +38,31 @@ summary(model) # show rules
 ## X-squared = 266.35, df = 4, p-value < 2.2e-16
  
 plot(model)
+
+prediction <- predict(model, data)
+eval_model(prediction, data)
+## 
+## Confusion matrix (absolute):
+##             Actual
+## Prediction   setosa versicolor virginica Sum
+##   setosa         50          0         0  50
+##   versicolor      0         48         4  52
+##   virginica       0          2        46  48
+##   Sum            50         50        50 150
+## 
+## Confusion matrix (relative):
+##             Actual
+## Prediction   setosa versicolor virginica  Sum
+##   setosa       0.33       0.00      0.00 0.33
+##   versicolor   0.00       0.32      0.03 0.35
+##   virginica    0.00       0.01      0.31 0.32
+##   Sum          0.33       0.33      0.33 1.00
+## 
+## Accuracy:
+## 0.96 (144/150)
+## 
+## Error rate:
+## 0.04 (6/150)
+## 
+## Error rate reduction (vs. base rate):
+## 0.94 (p-value < 2.2e-16)
