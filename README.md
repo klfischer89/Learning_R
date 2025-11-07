@@ -23,4 +23,5 @@ R Files will be named by learning source or simply learning followed by a topic,
   2. [R](https://cloud.r-project.org/)
   3. [Installing R](https://github.com/REditorSupport/vscode-R/wiki/Installation:-Windows)
   4. [Integrating R in VS Code](https://github.com/REditorSupport/vscode-R/wiki/Installation:-Windows)
+  
   *Notice that httpgd and R 4.5.2 ist not compatible with eacht other.*
