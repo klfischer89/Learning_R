@@ -28,7 +28,7 @@ dfSurvey$TestScore <- (dfSurvey$IQScore -100)/5 + dfSurvey$Creativity + ((dfSurv
     dfSurvey$Age + dfSurvey$PlaysInstrument * 7 + 50 + rnorm(80, 0, 5)
 
 dfSurvey$TestScore
-
+dfSurvey
 
 ##############
 # Approach 2 #
